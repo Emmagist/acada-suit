@@ -16,9 +16,11 @@ $(function() {
         if (scroll < 20) {
             $(".navbar-area").removeClass("sticky");
             $(".navbar-area img").attr("src", "assets/images/aca_logo2.png");
+            $(".navbar-area img").removeClass("sticky-resize");
         } else {
             $(".navbar-area").addClass("sticky");
             $(".navbar-area img").attr("src", "assets/images/aca_logo.png");
+            $(".navbar-area img").addClass("sticky-resize");
         }
     });
 
@@ -214,7 +216,7 @@ $('#contactForm').submit(function () {
     var formdata = new FormData(this);
     // alert(formdata)
     $.ajax({
-        url: 'process.php',
+        url: 'process.php?contData=cont',
         type : "post",
         dataType: "json",
         data:formdata,
@@ -222,22 +224,47 @@ $('#contactForm').submit(function () {
         contentType: false,
         processData: false,
         success : function(data){
-            alert(data);
+            // alert(data);
             if(data){
-                $('#error').text(data);
-                // swal({
-                //     title: "Successful",
-                //     text: data,
-                //     icon: "success",
-                // });
-                location.reload();
-            }else {
-                $('#error').text(data);
-                // swal({
-                //     title: "Error!",
-                //     text: "Contents not successful....",
-                //     icon: "error", 
-                // });
+                // alert(data);
+                swal({
+                    title: "Good job!",
+                    text: data,
+                    icon: "success",
+                });
+
+                setTimeout(() => {
+                    location.reload();
+                }, 1000);
+            }
+        }
+    });
+    return false;
+})
+
+$('#registerForm').submit(function () {
+    var formdata = new FormData(this);
+    // alert(formdata)
+    $.ajax({
+        url: 'process.php?regData=reg',
+        type : "post",
+        dataType: "json",
+        data:formdata,
+        cache:false,
+        contentType: false,
+        processData: false,
+        success : function(respond){
+            // alert(respond);
+            if(respond){
+                swal({
+                    title: "Good job!",
+                    text: respond,
+                    icon: "success",
+                });
+
+                setTimeout(() => {
+                    location.reload();
+                }, 1000);
             }
         }
     });

@@ -33,7 +33,7 @@
                    <p>Quality, Affordable & Accessible For All. Quality Education Made Available Everywhere you are We bring together from all over Africa educational gurus who deliver knowledge using instructional videos, practice quizzes, and personalized notes in various subject areas</p>
                    <h4>What Differentiates ACADASUITE?</h4>
                    <p>Promoting Quality Education And Making Learning More Interesting to all learners.</p>
-                   <a href="#" style="color:#fff; background:#0067f4;border:none;border-radius:10px;font-weight:bold;font-size:18px;padding:10px;margin-left:20%;margin-top:20px;text-decoration:none;">Start Learning Now</a>
+                   <a href="http://www.acadasuite.com" style="color:#fff; background:#0067f4;border:none;border-radius:10px;font-weight:bold;font-size:18px;padding:10px;margin-left:20%;margin-top:20px;text-decoration:none;">Start Learning Now</a>
                    
                 </div> 
                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>

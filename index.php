@@ -30,6 +30,9 @@
     
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--===== Sweet Alert =====-->
+    <!-- <link rel="stylesheet" href="sweetalert2.min.css"> -->
     
 </head>
 
@@ -68,7 +71,7 @@
                     <nav class="navbar navbar-expand-lg">
                        
                         <a class="navbar-brand" href="#">
-                            <img src="assets/images/aca_logo2.png" alt="Logo" height="90px">
+                            <img src="assets/images/aca_logo2.png" alt="Logo" height="180px">
                         </a>
                         
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTwo" aria-controls="navbarTwo" aria-expanded="false" aria-label="Toggle navigation">
@@ -118,7 +121,7 @@
                                     For All Learners
                                     </p>
                                     <ul class="slider-btn rounded-buttons">
-                                        <li><a class="main-btn rounded-one" href="#subcribe">SUBSCRIBE NOW</a></li>
+                                        <li><a class="main-btn rounded-one page-scroll" href="#subcribe">SUBSCRIBE NOW</a></li>
                                         <!-- <li><a class="main-btn rounded-two" href="#">DOWNLOAD</a></li> -->
                                     </ul>
                                 </div>
@@ -128,15 +131,14 @@
                     <<div class="slider-image-box d-none d-lg-flex align-items-end">
                         <div class="slider-image" id="slider-image-show">
                             <h4 class="form-title pb-10"><i class=""></i> Register to grab a free course.</h4>
-                    
-                            <form id="contactForm" action="" method="post">
+                            <form id="registerForm" action="" method="post">
                                 <div class="error"></div>
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-input mt-25">
                                             <label>Name</label>
                                             <div class="input-items default">
-                                                <input name="name" type="text" placeholder="Name">
+                                                <input name="reg_name" type="text" placeholder="Name">
                                                 <i class="lni lni-user"></i>
                                             </div>
                                         </div> <!-- form input -->
@@ -145,7 +147,7 @@
                                         <div class="form-input mt-25">
                                             <label>Email</label>
                                             <div class="input-items default">
-                                                <input type="email" name="email" placeholder="Email">
+                                                <input type="email" name="reg_email" placeholder="Email">
                                                 <i class="lni lni-envelope"></i>
                                             </div>
                                         </div> <!-- form input -->
@@ -162,58 +164,7 @@
                         
                     </div>  <!-- -->
                 </div> <!-- carousel-item -->
-
-                <!-- <div class="carousel-item">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="slider-content">
-                                    <h1 class="title">Crafted for Business</h1>
-                                    <p class="text">We blend insights and strategy to create digital products for forward-thinking organisations.</p>
-                                    <ul class="slider-btn rounded-buttons">
-                                        <li><a class="main-btn rounded-one" href="#">GET STARTED</a></li>
-                                        <li><a class="main-btn rounded-two" href="#">DOWNLOAD</a></li>
-                                    </ul>
-                                </div> <!-- slider-content 
-                            </div>
-                        </div> <!-- row --
-                    </div> <!-- container --
-                    <div class="slider-image-box d-none d-lg-flex align-items-end">
-                        <div class="slider-image">
-                            <img src="assets/images/slider/2.png" alt="Hero">
-                        </div> <!-- slider-imgae --
-                    </div> <!-- slider-imgae box --
-                </div>  -->
-
-                <!--<div class="carousel-item">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="slider-content">
-                                    <h1 class="title">Based on Bootstrap 4</h1>
-                                    <p class="text">We blend insights and strategy to create digital products for forward-thinking organisations.</p>
-                                    <ul class="slider-btn rounded-buttons">
-                                        <li><a class="main-btn rounded-one" href="#">GET STARTED</a></li>
-                                        <li><a class="main-btn rounded-two" href="#">DOWNLOAD</a></li>
-                                    </ul>
-                                </div> <!- slider-content -->
-                            <!-- </div>
-                        </div> row -->
-                    <!-- </div> <!- container -->
-                    <!-- <div class="slider-image-box d-none d-lg-flex align-items-end">
-                        <div class="slider-image"> -->
-                            <!-- <img src="assets/images/slider/3.png" alt="Hero"> -->
-                        <!-- </div> <!- slider-imgae -->
-                    <!-- </div> <!- slider-imgae box -->
-                <!-- </div>  carousel-item -->
             </div> 
-
-            <!-- <a class="carousel-control-prev" href="#carouselThree" role="button" data-slide="prev">
-                <i class="lni lni-arrow-left"></i>
-            </a>
-            <a class="carousel-control-next" href="#carouselThree" role="button" data-slide="next">
-                <i class="lni lni-arrow-right"></i>
-            </a> -->
         </div>
     </section>
 
@@ -236,9 +187,9 @@
                     <div class="single-features mt-40">
                         <div class="features-title-icon  justify-content-between">
                             <h4 class="features-title"><a href="#"> Professional Tutors</a></h4>
-                            <div class="features-icon">
-                                <i class="lni lni-brush"></i>
-                                <img class="shape" src="assets/images/f-shape-1.svg" alt="Shape">
+                            <div class="mt-3">
+                                <!-- <i class="lni lni-brush"></i> -->
+                                <img class="shape" src="assets/images/pro_tutor2.jpg" alt="Shape">
                             </div>
                         </div>
                         <div class="features-content">
@@ -251,9 +202,9 @@
                     <div class="single-features mt-40">
                         <div class="features-title-icon justify-content-between">
                             <h4 class="features-title"><a href="#">Video Content</a></h4>
-                            <div class="features-icon">
-                                <i class="lni lni-layout"></i>
-                                <img class="shape" src="assets/images/f-shape-1.svg" alt="Shape">
+                            <div class="mt-3">
+                                <!-- <i class="lni lni-layout"></i> -->
+                                <img class="shape" src="assets/images/video_content.jpg" alt="Shape" height="150px" width="100%">
                             </div>
                         </div>
                         <div class="features-content">
@@ -266,9 +217,9 @@
                     <div class="single-features mt-40">
                         <div class="features-title-icon justify-content-between">
                             <h4 class="features-title"><a href="#">Text Content and Quizzes</a></h4>
-                            <div class="features-icon">
-                                <i class="lni lni-bolt"></i>
-                                <img class="shape" src="assets/images/f-shape-1.svg" alt="Shape">
+                            <div class="mt-3">
+                                <!-- <i class="lni lni-bolt"></i> -->
+                                <img class="shape" src="assets/images/600.jpg" alt="Shape" height="150px" width="100%">
                             </div>
                         </div>
                         <div class="features-content">
@@ -280,92 +231,6 @@
             </div> <!-- row -->
         </div> <!-- container -->
     </section>
-
-    <!--====== PRINICNG START ======-->
-
-    <section id="pricing" class="pricing-area ">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-10">
-                    <div class="section-title text-center pb-25">
-                        <h3 class="title">Feature Courses</h3>
-                        <p class="text">Your hunt for affordable education ends here
-                        Join us to get the best educational content and achieve your excellent grades at a very affordable price.
-                        </p>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="pricing-style mt-30">
-                        <div class="pricing-icon text-center">
-                            <img src="assets/images/basic.svg" alt="">
-                        </div>
-                        <div class="pricing-header text-center">
-                            <h5 class="sub-title">Basic</h5>
-                            <p class="month"><span class="price">&#8358; 199</span>/month</p>
-                        </div>
-                        <div class="pricing-list">
-                            <ul>
-                                <li><i class="lni lni-check-mark-circle"></i> Carefully crafted components</li>
-                                <li><i class="lni lni-check-mark-circle"></i> Amazing page examples</li>
-                            </ul>
-                        </div>
-                        <!-- <div class="pricing-btn rounded-buttons text-center">
-                            <a class="main-btn rounded-one" href="#">GET STARTED</a>
-                        </div>     -->
-                    </div> <!-- pricing style one -->
-                </div>
-                
-                <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="pricing-style mt-30">
-                        <div class="pricing-icon text-center">
-                            <img src="assets/images/pro.svg" alt="">
-                        </div>
-                        <div class="pricing-header text-center">
-                            <h5 class="sub-title">Pro</h5>
-                            <p class="month"><span class="price">&#8358; 399</span>/month</p>
-                        </div>
-                        <div class="pricing-list">
-                            <ul>
-                                <li><i class="lni lni-check-mark-circle"></i> Carefully crafted components</li>
-                                <li><i class="lni lni-check-mark-circle"></i> Amazing page examples</li>
-                            </ul>
-                        </div>
-                        <!-- <div class="pricing-btn rounded-buttons text-center">
-                            <a class="main-btn rounded-one" href="#">GET STARTED</a>
-                        </div> -->
-                    </div> <!-- pricing style one -->
-                </div>
-                
-                <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="pricing-style mt-30">
-                        <div class="pricing-icon text-center">
-                            <img src="assets/images/enterprise.svg" alt="">
-                        </div>
-                        <div class="pricing-header text-center">
-                            <h5 class="sub-title">Enterprise</h5>
-                            <p class="month"><span class="price">&#8358; 699</span>/month</p>
-                        </div>
-                        <div class="pricing-list">
-                            <ul>
-                                <li><i class="lni lni-check-mark-circle"></i> Carefully crafted components</li>
-                                <li><i class="lni lni-check-mark-circle"></i> Amazing page examples</li>
-                            </ul>
-                        </div>
-                        <!-- <div class="pricing-btn rounded-buttons text-center">
-                            <a class="main-btn rounded-one" href="#">GET STARTED</a>
-                        </div> -->
-                    </div> <!-- pricing style one -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-
-    <!--====== TESTIMONIAL PART ENDS ======-->
-    
-    <!--====== TEAM START ======-->
-
 
     <section id="contact" class="contact-area" id="contact">
         <div class="container">
@@ -498,41 +363,10 @@
     
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
-    <script>
-        // $('#contactForm').submit(function () {
-        //     var formdata = new FormData(this);
-        //     // alert(formdata)
-        //     $.ajax({
-        //         url: 'process.php',
-        //         type : "post",
-        //         dataType: "json",
-        //         data:formdata,
-        //         cache:false,
-        //         contentType: false,
-        //         processData: false,
-        //         success : function(data){
-                    
-        //             if(data){
-        //                 $('#error').text(data);
-        //                 // swal({
-        //                 //     title: "Successful",
-        //                 //     text: data,
-        //                 //     icon: "success",
-        //                 // });
-        //                 location.reload();
-        //             }else {
-        //                 $('#error').text(data);
-        //                 // swal({
-        //                 //     title: "Error!",
-        //                 //     text: "Contents not successful....",
-        //                 //     icon: "error", 
-        //                 // });
-        //             }
-        //         }
-        //     });
-        //     return false;
-        // })
-    </script>
+
+    <!--==== Sweet Alert ====-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </body>
 
 </html>

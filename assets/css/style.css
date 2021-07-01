@@ -207,6 +207,8 @@ p {
       animation: ytp-right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both; }
 
 /* Preloader Animations */
+
+.sticky-resize{height: 25px;}
 @-webkit-keyframes ytp-spinner-linspin {
   to {
     -webkit-transform: rotate(360deg);
@@ -2412,11 +2414,11 @@ p {
         font-weight: bold;
       }
 
-      .slider-image-box .slider-image #contactForm{
+      .slider-image-box .slider-image #registerForm{
         width: 400px;
       }
 
-      .slider-image-box .slider-image #contactForm input{
+      .slider-image-box .slider-image #registerForm input{
         border: none;
         border-radius: 10px;
       }
